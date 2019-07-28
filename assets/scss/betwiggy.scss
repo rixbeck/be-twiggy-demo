@@ -1,0 +1,71 @@
+@import "settings";
+@import "~bulma/bulma";
+@import "overrides";
+
+.admin-content {
+  margin-top: 2rem;
+}
+
+.project-media, .project-filters {
+  overflow: initial;
+  
+  .dropdown-menu {
+    padding: 0;
+  }
+  
+  .dropdown-content {
+    padding: 0;
+  }
+  
+  .project-image {
+    width: 64px;
+  }
+}
+
+
+.project-filters {
+  .columns {
+    margin: .5rem 0;
+  }
+  
+  .level-right .button {
+    margin-left: .5rem;
+  }
+}
+
+.project-handlers {
+  align-items: end;
+}
+
+.selectize {
+  .selectize-tags {
+    align-items: end;
+  }
+  
+  .tags {
+    margin: 0 .5rem;
+    align-content: center;
+    justify-content: end;
+    
+    .tag {
+      margin: .2rem;
+    }
+
+    &.has-changed {
+      .tag {
+        background-color: $primary;
+        
+        .button {
+          background-color: $primary-dark;
+        }
+      }
+    }
+  }
+  
+  &.-status-filter {
+    .selectize-tags {
+      flex-direction: row-reverse;
+    }
+  }
+}
+

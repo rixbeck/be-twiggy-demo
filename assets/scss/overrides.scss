@@ -1,0 +1,19 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: revert;
+}
+
+footer.card-footer {
+  position: unset;
+  color: unset;
+  padding: unset;
+}
+
+select:focus {
+  border-color: revert !important;
+  box-shadow: revert !important;
+}
