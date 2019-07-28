@@ -1,0 +1,13 @@
+{
+  "entrypoints": {
+    "demo": {
+      "js": [
+        "/build/runtime.js",
+        "/build/demo.js"
+      ],
+      "css": [
+        "/build/demo.css"
+      ]
+    }
+  }
+}
