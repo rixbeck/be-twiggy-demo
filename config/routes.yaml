@@ -1,0 +1,20 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+homepage:
+  path: /
+  controller: App\Controller\PageController::page
+  requirements:
+    _locale: '%app_locales%'
+  defaults:
+    page: 'base'
+    _locale: 'en'
+
+page:
+  path: /{page}
+  controller: App\Controller\PageController::page
+  requirements:
+    _locale: '%app_locales%'
+  defaults:
+    _locale: 'en'
