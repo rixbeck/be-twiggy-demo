@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('demo') }}
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}{{ page ?? 'index' }}{{ dump(request ?? []) }}{% endblock %}
+        {% include "@BeTwiggy/element/_button.twig" %}
+        {% block javascripts %}
+            {{ encore_entry_script_tags('demo') }}
+        {% endblock %}
+    </body>
+</html>
