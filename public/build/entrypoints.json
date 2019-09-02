@@ -2,11 +2,12 @@
   "entrypoints": {
     "demo": {
       "js": [
-        "/build/runtime.js",
-        "/build/demo.js"
+        "http://localhost:8080/build/runtime.js",
+        "http://localhost:8080/build/vendors~demo.js",
+        "http://localhost:8080/build/demo.js"
       ],
       "css": [
-        "/build/demo.css"
+        "http://localhost:8080/build/demo.css"
       ]
     }
   }

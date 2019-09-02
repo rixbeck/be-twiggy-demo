@@ -1,5 +1,6 @@
 {
-  "build/demo.css": "/build/demo.css",
-  "build/demo.js": "/build/demo.js",
-  "build/runtime.js": "/build/runtime.js"
+  "build/demo.css": "http://localhost:8080/build/demo.css",
+  "build/demo.js": "http://localhost:8080/build/demo.js",
+  "build/runtime.js": "http://localhost:8080/build/runtime.js",
+  "build/vendors~demo.js": "http://localhost:8080/build/vendors~demo.js"
 }
